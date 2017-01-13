@@ -6,12 +6,24 @@ import App from './App'
 import './index.css'
 
 import AppDep from 'redux-store-share-dep'
-console.log(AppDep)
 
 const store = configureStore()
 
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App/>
+//   </Provider>, document.getElementById('root')
+// )
+
+// ReactDOM.render(
+//   <AppDep store={store}/>,
+//   document.getElementById('root')
+// )
+
 ReactDOM.render(
   <Provider store={store}>
-    <App/>
+    <App>
+      <AppDep store={store}/>
+    </App>
   </Provider>, document.getElementById('root')
 )
