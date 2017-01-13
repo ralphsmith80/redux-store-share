@@ -17,7 +17,7 @@ class App extends Component {
             <h2>Welcome to React</h2>
           </header>
           <p className='App-intro'>
-            To get started, edit <code>src/App.js</code> and save to reload.
+            I'm the parent Component. Click me to invoke a store action!
           </p>
         </section>
         <section>{this.props.children}</section>
